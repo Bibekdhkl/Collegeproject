@@ -7,6 +7,11 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
       <title>BidhyarthiSewa</title>
+      
+      <!-- Fontawesome  -->
+
+      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>    -->
 
       <link rel="stylesheet" href="assets/style/style.css">
 </head>
@@ -24,8 +29,14 @@
                   </form>
             </div>
             <div class="icons">
-                  <a href="signin"><img src="/assets/Icons/person.png" alt="signin logo">
-                        <inline class="nav-text">Sign In<br>Join For Free</inline>
+                  <a href="signin" class="signin-signup"><img src="/assets/Icons/person.png" alt="signin logo">
+                        <inline class="nav-text">Log In<br>Join For Free</inline>
+                        <ul class="menu">
+                              <li><a href="signin.html">Log In</a></li>
+                              <!-- Use ul:first-child() in css to select above -->
+                              <li class="signup"><a href="signup.html">Create Account</a></li>
+                              
+                        </ul>
                   </a>
                   <a href="cart"><img src="/assets/Icons/cart.png" alt="cart image">
                         <!-- <div></div> -->
@@ -134,7 +145,7 @@
 
             </div>
       </div>
-      <script src="script.js"> </script>
+      <script type="module" src="script.js"> </script>
 </body>
 
 </html>
