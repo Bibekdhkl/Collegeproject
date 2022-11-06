@@ -1,0 +1,150 @@
+@font-face {
+      font-family: "poppins";
+      src: url("/assets/Fonts/Poppins-ExtraLight.ttf");
+}
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "poppins";
+    }
+    
+    body {
+      background-size: cover;
+      background-color:#DCBEBE;
+      overflow: hidden;
+    }
+    
+    /* Setting default font-size to 1px ,So 1rem = 1px  */
+    html {
+      font-size: 10px;
+    }
+    
+    main {
+      height: 100vh;
+    }
+    
+    a{
+      text-decoration: none;
+      font-size: 0.7em;
+      color:black;
+    }
+
+    a:hover{
+      color:rgb(255, 0, 0);
+    }
+
+    
+    /* Making top to bottom layout for main and form elements  */
+    main,
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    form {
+      font-size: 1.8rem;
+      text-align: left;
+    }
+    /* Idea content */
+    .container{
+      /* background-color: rgb(247, 247, 247); */
+      display: flex;
+      align-items:center;
+      flex-direction: column;
+      justify-content:space-evenly;
+
+      }
+
+      .container h1{
+      font-size: 6em;
+      color: #AD0000;
+      padding-bottom: 20px;   
+      }
+
+      .container .idea-content{
+            font-size: 2em;
+            padding-bottom: 2em;
+      }
+
+    
+    /* Styling the card  */
+    section {
+      /* To make background objects blurry  */
+      background-color: white;
+      backdrop-filter: blur(.4rem);
+      margin: 0 auto;
+      padding: 2rem;
+      text-align: center;
+      font-size: 2rem;
+      box-shadow: 0 0 1rem black;
+      width: 95% and max-width: 350rem
+      width: min(95%, 35rem);
+    }
+    
+    /* header {
+      margin-bottom: 2rem;
+      font-weight: 500;
+      color:rgb(0, 13, 43);
+    } */
+    
+    /* Styling Form Elements */
+    label {
+      margin-bottom: .5rem;
+    }
+    
+    
+    input {
+      margin-bottom: 1rem;
+      padding: .5rem;
+      background-color: rgba(126, 16, 71, 0.2);
+      border: .1rem solid rgb(128, 128, 128,0.9);
+      font-size: 1.6rem;
+      color: rgb(7, 9, 25);
+      border-radius: .3rem;
+    }
+    
+    .submit-btn {
+      background-color: #dd2525d2;
+      color:white;
+      padding: .6rem;
+      margin-top: 2.2rem;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover{
+      background-color: #ff0000;
+    }
+    
+    input:focus{
+      outline: none;
+      border-color: #ff0606;
+      box-shadow: 0 0 1px #000000;
+    }
+    
+    .submit-btn:focus{
+      color: #9ecaed;
+      text-shadow: 0 0 1px #9ecaed;
+    }
+    
+    /* Media query  */
+    @media (max-width: 600px) {
+      html {
+        font-size: 12px;
+      }
+
+      .container h1{
+            font-size: 4em;
+      }
+
+      .container .idea-content{
+            font-size: 1em;
+      }
+
+      img{
+            height: 6em;
+      }
+    }
+
